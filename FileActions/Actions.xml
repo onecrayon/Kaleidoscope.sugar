@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<action-recipes>
+	
+	<action id="com.onecrayon.sugar.kaleidoscope.diff-files" category="diff.kaleidoscope/1">
+		<class>OCShellAction</class>
+		<when-disabled>show</when-disabled>
+		<setup>
+			<script>diff-selections.py</script>
+			
+			<multiple-selections>true</multiple-selections>
+			<single-selection>false</single-selection>
+			<empty-selection>false</empty-selection>
+			
+			<output>html</output>
+		</setup>
+	</action>
+	
+	<action id="com.onecrayon.sugar.kaleidoscope.diff-with-clipboard" category="diff.kaleidoscope/2">
+		<class>OCShellAction</class>
+		<when-disabled>show</when-disabled>
+		<setup>
+			<script>diff-with-clipboard.py</script>
+			
+			<multiple-selections>false</multiple-selections>
+			<single-selection>true</single-selection>
+			<empty-selection>false</empty-selection>
+			
+			<output>html</output>
+		</setup>
+	</action>
+	
+</action-recipes>
